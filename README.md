@@ -40,7 +40,7 @@ http://127.0.0.1:8000/schedule/
 
 ### Creating a Schedule<br/>
 Navigate to http://127.0.0.1:8000/schedule/create/ <br/>
-JSON Configuration For User Input would be as follows: <br/>
+Request Payload would be as follows: <br/>
 ```json
 {
   "instance_id": "<instance_id>",
@@ -54,7 +54,7 @@ This creates two individual Rules and Triggers(one each for start and stop funct
 
 ### Updating a Schedule<br/>
 Navigate to http://127.0.0.1:8000/schedule/update/ <br/>
-JSON Configuration For User Input would be as follows: <br/>
+Request Payload would be as follows: <br/>
 ```json
 {
   "instance_id": "<instance_id>",
@@ -64,7 +64,7 @@ JSON Configuration For User Input would be as follows: <br/>
   }
 }
 ```
-JSON input is similar to "create schedule" functionality, except for the changed values of cron expressions. <br/>
+Request Payload is similar to "create schedule" functionality, except for the changed values of cron expressions. <br/>
 
 ### Fetching/Reading a Schedule<br/>
 Navigate to http://127.0.0.1:8000/schedule/fetch/?id_instance=<instance_id> <br/>
@@ -72,7 +72,7 @@ instance_id is the identifier for the EC2 instance whose schedule is to be fetch
 
 ### Deleting a Schedule<br/>
 Navigate to http://127.0.0.1:8000/schedule/delete/ <br/>
-JSON Configuration For User Input would be as follows: <br/>
+Request Payload would be as follows: <br/>
 ```json
 {
     "instance_id":"<instance_id>"
